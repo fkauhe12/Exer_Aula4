@@ -15,11 +15,15 @@ public class Televisor {
     }
 
     public void desligar() {
-        if (this.ligado == true) { // Corrected syntax
+        if (this.ligado == true) {
             this.ligado = false;
             System.out.println("Televisor desligado.");
         } else {
             System.out.println("Televisor já está desligado.");
         }
+    }
+
+    public void aumentarVolume(int Volume) {
+        if (this.ligado == true) {
     }
 
