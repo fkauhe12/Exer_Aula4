@@ -23,7 +23,7 @@ public class Televisor {
         }
     }
 
-    public void aumentarVolume(int volume) {
+    public void aumentarVolume() {
         if (this.ligado == true) {
             if (this.volume + volume <= 100) {
                 this.volume += volume;
@@ -36,7 +36,7 @@ public class Televisor {
         }
     }
 
-    public void reduzirVolume(int volume) {
+    public void reduzirVolume() {
         if (this.ligado == true) {
             if (this.volume - volume >= 0) {
                 this.volume -= volume;
@@ -62,11 +62,11 @@ public class Televisor {
         }
     }
 
-    public void mostrarCanal() {
+    public void mostrar() {
         if (this.ligado == true) {
-            System.out.println("Canal atual: " + this.canal);
+            System.out.println("Volume: " + this.volume + ", Canal: " + this.canal);
         } else {
-            System.out.println("Televisor desligado. Não é possível mostrar o canal.");
+            System.out.println("Televisor desligado. ");
         }
     }
 

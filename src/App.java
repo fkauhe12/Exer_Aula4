@@ -6,13 +6,13 @@ public class App {
         // Ligar o televisor
         tv.ligar();
         // Aumentar o volume
-        tv.aumentarVolume(20);
+        tv.aumentarVolume();
         // Diminuir o volume
-        tv.reduzirVolume(5);
+        tv.reduzirVolume();
         //desligar tv
         tv.desligar();
         // Tentar aumentar o volume enquanto a TV está desligada
-        tv.aumentarVolume(30);
+        tv.aumentarVolume();
         //Verificar se está ligada
         tv.verificarLigada();
         //ligar tv
@@ -20,7 +20,7 @@ public class App {
         // Trocar canal
         tv.trocarCanal(20);
         // Mostrar canal atual
-        tv.mostrarCanal();
+        tv.mostrar();
         
 
     }
